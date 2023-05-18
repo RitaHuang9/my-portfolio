@@ -16,6 +16,7 @@ body {
 a {
     color: $gray-dark;
     text-decoration: none;
+    display: block;
     &:hover{
         color: $primary;
     }

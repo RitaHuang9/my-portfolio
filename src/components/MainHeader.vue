@@ -15,18 +15,21 @@
               :to="{
                 name: 'about'
               }"
+              class="nav-link"
               >ABOUT</RouterLink
             >
             <RouterLink
               :to="{
                 name: 'home'
               }"
+              class="nav-link"
               >WORK</RouterLink
             >
             <RouterLink
               :to="{
                 name: 'home'
               }"
+              class="download"
               >RESUME</RouterLink
             >
           </nav>

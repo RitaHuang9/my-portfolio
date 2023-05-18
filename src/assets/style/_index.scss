@@ -3,13 +3,13 @@
         position: relative;
     }
     &-bg {
-        background-image: url("@/assets/images/main-bg.svg");
         width: 100%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         z-index: -100;
+        @include bg(main-bg,svg)
     }
     &-title {
         font-size: $h1;
