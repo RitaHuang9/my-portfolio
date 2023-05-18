@@ -1,0 +1,56 @@
+@mixin desktop {
+    @media (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile_lg {
+    @media (max-width: 414px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content
+    }
+}
+
+@mixin mobile_s {
+    @media (max-width: 320px) {
+        @content
+    }
+}
+
+@mixin flex($ai:normal, $jc:normal, $flex-d:row){
+    display: flex;
+    flex-direction: $flex-d;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin bg($img-name, $img-file, $bg-x:center, $bg-y:center, $bg-repeat:no-repeat, $bg-size:cover){
+    background: url('@/assets/images/#{$img-name}.#{$img-file}') $bg-x $bg-y $bg-repeat;
+    background-size: $bg-size;
+}
+
+// 漸層文字
+@mixin text-linear-gradient($direction:241deg,$left-position:60%,$middle-position: 70%,$right-position:135%){
+    background-image: linear-gradient($direction, #E83DB8 $left-position,#4653CA $middle-position, #b913e9 $right-position);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+
+@mixin cursor{
+    // cursor: url(../images/icon/cursor.png), auto;
+    cursor: pointer;
+}

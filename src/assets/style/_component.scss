@@ -1,0 +1,36 @@
+.main {
+    &-header {
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        .logo {
+            max-width: 40px;
+            width: 100%;
+        }
+        &-top {
+            background: hsla(0, 0%, 100%, 0.4);
+            backdrop-filter: blur(7px);
+        }
+    }
+}
+
+.btn {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    @include bg(icon/arrow-right-white, svg, center, center, no-repeat, 22px);
+    @include flex(center, center);
+    background-color: $gray-dark;
+    p {
+        display: none;
+    }
+}
