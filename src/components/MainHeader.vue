@@ -20,7 +20,7 @@
             >
             <RouterLink
               :to="{
-                name: 'home'
+                name: 'work'
               }"
               class="nav-link"
               >WORK</RouterLink

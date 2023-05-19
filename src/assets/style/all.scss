@@ -8,21 +8,21 @@
 @import './component';
 
 
-@import './layout.scss';
 @import './index.scss';
+@import './work.scss';
 
 
-.test{
-    font-size: 80px;
-    font-weight: 900;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; 
-    background-image: $bg-primary;
-}
+// .test{
+//     font-size: 80px;
+//     font-weight: 900;
+//     color: transparent;
+//     background-clip: text;
+//     -webkit-background-clip: text; 
+//     background-image: $bg-primary;
+// }
 
-.box{
-    width: 100px;
-    height: 100px;
-    background: $bg-primary;
-}
+// .box{
+//     width: 100px;
+//     height: 100px;
+//     background: $bg-primary;
+// }

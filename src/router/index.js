@@ -12,6 +12,18 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/work',
+      name: 'work',
+      component: () => import('../views/work/WorkList.vue'),
+      children:[
+        {
+          path: 'F2E',
+          name: 'F2E',
+          component: () => import('../views/work/F2E.vue'),
+        },
+      ]
     }
   ]
 })

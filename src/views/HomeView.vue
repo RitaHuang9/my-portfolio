@@ -1,18 +1,5 @@
 <template>
   <main>
-    <!-- <RouterLink
-      :to="{
-        name: 'home'
-      }"
-      >前台畫面ssss</RouterLink
-    >
-
-    <RouterLink
-      :to="{
-        name: 'about'
-      }"
-      >about</RouterLink
-    > -->
     <h2 class="main-title">HELLO WELCOME</h2>
     <h1 class="main-name">Rita Huang</h1>
     <div class="entrance">
@@ -29,7 +16,7 @@
           </button>
         </div>
       </a>
-      <a @click="goToPage('about')" class="entrance-wrapper middle">
+      <a @click="goToPage('work')" class="entrance-wrapper middle">
         <div class="entrance-card">
           <div>
             <div class="entrance-card-title">Work</div>
