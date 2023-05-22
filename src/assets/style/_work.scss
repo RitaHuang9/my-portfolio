@@ -2,6 +2,14 @@
     @include flex(flex-end, space-between);
     &-box {
         @include flex;
+        &-item{
+            &.active {
+                .pageNav-box-link{
+                    background: rgb(232 61 184 / 20%);
+                    border-radius: 20px;
+                }
+            }
+        }
         &-link {
             padding: 8px 12px;
         }

@@ -5,43 +5,31 @@
       <div class="pageNav">
         <h2 class="block-title">work</h2>
         <ul class="pageNav-box">
-          <li class="pageNav-box-iiem">
-            <a href="" class="pageNav-box-link">前端切版</a>
+          <li class="pageNav-box-item" :class="{ active: category === 'F2E' }">
+            <a href="" @click.prevent="renderProduct('F2E')" class="pageNav-box-link">前端切版</a>
           </li>
-          <li class="pageNav-box-iiem">
-            <a href="" class="pageNav-box-link">UI設計</a>
+          <li class="pageNav-box-item" :class="{ active: category === 'UI' }">
+            <a href="" @click.prevent="renderProduct('UI')" class="pageNav-box-link">UI設計</a>
           </li>
         </ul>
       </div>
-      <div class="workList" v-for="item in workList" :key="item.id">
-        <a :href="item.href" class="workList-wrapper" target="_blank">
-          <div class="workList-card">
-            <img class="workList-img" :src="item.imageName" alt="" />
-            <!-- <img class="workList-img" src="../../assets/images/work/work-home.png" alt="" /> -->
-            <div class="workList-content">
-              <h3 class="workList-title">{{ item.title }}</h3>
-              <h4 class="workList-use">{{ item.tag }}</h4>
-              <h5 class="workList-txt">{{ item.content }}</h5>
-              <button type="button" class="btn">
-                <p>MORE</p>
-              </button>
+      <ul class="workList">
+        <li class="workList-wrapper" v-for="item in newWorkList" :key="item.id">
+          <a :href="item.href" target="_blank">
+            <div class="workList-card">
+              <img class="workList-img" :src="item.imageName" alt="" />
+              <div class="workList-content">
+                <h3 class="workList-title">{{ item.title }}</h3>
+                <h4 class="workList-use">{{ item.tag }}</h4>
+                <h5 class="workList-txt">{{ item.content }}</h5>
+                <button type="button" class="btn">
+                  <p>MORE</p>
+                </button>
+              </div>
             </div>
-          </div>
-        </a>
-        <!-- <a href="#" class="workList-wrapper" target="_blank">
-          <div class="workList-card">
-            <img class="workList-img" src="@/assets/images/work/work-home.png" alt="" />
-            <div class="workList-content">
-              <h3 class="workList-title">MOONLIGHT</h3>
-              <h4 class="workList-use">VUE・SCSS</h4>
-              <h5 class="workList-txt">說明說明說明說明說明說明說明說明說明</h5>
-              <button type="button" class="btn">
-                <p>MORE</p>
-              </button>
-            </div>
-          </div>
-        </a> -->
-      </div>
+          </a>
+        </li>
+      </ul>
       <router-view></router-view>
     </div>
   </div>
@@ -53,24 +41,56 @@ import MainHeader from '../../components/MainHeader.vue'
 export default {
   data() {
     return {
-      imagePath:'/my-portfolio/src/assets/images/work/',
+      category: 'F2E',
+      newWorkList: {},
       workList: [
         {
           category: 'F2E',
           title: 'MOONLIGHT',
-          content: '說明說明說明說明說明說明說明說明說明',
+          content: 'F2EF2E說明說明說明說明說明說明說明說明說明',
           tag: 'VUE・SCSS',
           id: '001',
           imageName: import.meta.env.VITE_PATH + 'work-home.png' + '?raw=true',
-          imageInfo:'MOONLIGHT示意圖',
-          href: 'https://ritahuang9.github.io/Home-furniture/#/user/index',
+          imageInfo: 'MOONLIGHT示意圖',
+          href: 'https://ritahuang9.github.io/Home-furniture/#/user/index'
+        },
+        {
+          category: 'UI',
+          title: 'MOONLIGHT',
+          content: 'UIUIUIUIUI說明說明說明說明說明說明說明說明說明',
+          tag: 'VUE・SCSS',
+          id: '002',
+          imageName: import.meta.env.VITE_PATH + 'work-home.png' + '?raw=true',
+          imageInfo: 'MOONLIGHT示意圖',
+          href: 'https://ritahuang9.github.io/Home-furniture/#/user/index'
         }
       ]
     }
   },
   components: {
     MainHeader
+  },
+  methods: {
+    renderProduct(category) {
+      if (category === '全部') {
+        this.newWorkList = this.workList
+        // this.name = 'F2E'
+        return
+      } else {
+        const newCategory = Object.values(this.workList).filter(
+          (item) => item.category === category
+        )
+        this.newWorkList = newCategory
+        console.log('現在列表',this.newWorkList);
+        
+      }
+
+      this.category = category
+      console.log('現在分類',this.category);
+    }
+  },
+  mounted() {
+    this.renderProduct('F2E')
   }
 }
-
 </script>
