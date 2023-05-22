@@ -17,6 +17,7 @@
         <a :href="item.href" class="workList-wrapper" target="_blank">
           <div class="workList-card">
             <img class="workList-img" :src="item.imageName" alt="" />
+            <!-- <img class="workList-img" src="../../assets/images/work/work-home.png" alt="" /> -->
             <div class="workList-content">
               <h3 class="workList-title">{{ item.title }}</h3>
               <h4 class="workList-use">{{ item.tag }}</h4>
@@ -60,7 +61,7 @@ export default {
           content: '說明說明說明說明說明說明說明說明說明',
           tag: 'VUE・SCSS',
           id: '001',
-          imageName: import.meta.env.VITE_PATH + 'work-home.png',
+          imageName: import.meta.env.VITE_PATH + 'work-home.png' + '?raw=true',
           imageInfo:'MOONLIGHT示意圖',
           href: 'https://ritahuang9.github.io/Home-furniture/#/user/index',
         }
@@ -71,4 +72,5 @@ export default {
     MainHeader
   }
 }
+
 </script>
