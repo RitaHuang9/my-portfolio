@@ -68,13 +68,13 @@ export default {
         },
         {
           category: 'F2E',
-          title: 'the F2E',
+          title: 'The F2E',
           content: '前端、設計參賽介紹網頁，僅負責切版、動畫部分。',
           tag: 'jQuery・SCSS',
           id: '002',
           imageName: import.meta.env.VITE_PATH + 'theF2E.png' + '?raw=true',
           imageInfo: 'the F2E示意圖',
-          href: 'https://ritahuang9.github.io/2022-theF2E/'
+          href: 'https://ritahuang9.github.io/the-F2E-2022/'
         },
         {
           category: 'F2E',
@@ -84,7 +84,7 @@ export default {
           id: '003',
           imageName: import.meta.env.VITE_PATH + 'codingHome.png' + '?raw=true',
           imageInfo: 'Coding Home示意圖',
-          href: 'https://ritahuang009.github.io/week06-codinghome/'
+          href: 'https://ritahuang9.github.io/CodingHome/'
         },
         {
           category: 'F2E',
@@ -94,17 +94,17 @@ export default {
           id: '004',
           imageName: import.meta.env.VITE_PATH + 'chatTalker.png' + '?raw=true',
           imageInfo: 'Chat Talker示意圖',
-          href: 'https://ritahuang009.github.io/chatTalker-AI_web/'
+          href: 'https://ritahuang9.github.io/chatTalker-AI/'
         },
         {
           category: 'F2E',
           title: 'ART NTF',
           content: '購買自己喜歡的藝術作品，也可加入我們開始出售自己的藝術作品。【上課作品】',
-          tag: 'jQuery・SCSS',
+          tag: 'jQuery・Tailwind',
           id: '005',
           imageName: import.meta.env.VITE_PATH + 'artNft.png' + '?raw=true',
           imageInfo: 'ART NTF示意圖',
-          href: 'https://ritahuang009.github.io/2022-week07-NFT-Art/'
+          href: 'https://ritahuang9.github.io/2022-NFT-Art/'
         },
       ]
     }

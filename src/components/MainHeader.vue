@@ -25,13 +25,7 @@
               class="nav-link"
               >WORK</RouterLink
             >
-            <RouterLink
-              :to="{
-                name: 'home'
-              }"
-              class="download"
-              >RESUME</RouterLink
-            >
+            <a href="" class="download">RESUME</a>
           </nav>
         </div>
       </div>

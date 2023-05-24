@@ -24,7 +24,12 @@ const router = createRouter({
           component: () => import('../views/work/F2E.vue'),
         },
       ]
-    }
+    },
+    // 404頁面
+    {
+      path:'/:pathMacth(.*)*',
+      component: () => import ('../views/work.vue')
+    },
   ]
 })
 
