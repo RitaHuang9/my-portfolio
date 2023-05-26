@@ -25,7 +25,7 @@
               class="nav-link"
               >WORK</RouterLink
             >
-            <a href="" class="download">RESUME</a>
+            <a href="/my-portfolio/src/assets/resume.pdf" class="download" target="_blank">RESUME</a>
           </nav>
         </div>
       </div>

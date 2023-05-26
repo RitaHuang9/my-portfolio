@@ -29,7 +29,7 @@
           </button>
         </div>
       </a>
-      <a @click="goToPage('about')" class="entrance-wrapper right">
+      <a href="/my-portfolio/src/assets/resume.pdf" class="entrance-wrapper right" target="_blank">
         <div class="entrance-card">
           <div>
             <div class="entrance-card-title">Resume</div>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <button type="button" class="btn">
-            <p>READ MORE</p>
+            <p>OPEN RESUME</p>
           </button>
         </div>
       </a>
