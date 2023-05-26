@@ -127,7 +127,7 @@ export default {
 
       this.category = category
       console.log('現在分類', this.category)
-    }
+    },
   },
   mounted() {
     this.renderProduct('F2E')

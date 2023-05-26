@@ -29,7 +29,7 @@
           </button>
         </div>
       </a>
-      <a href="/my-portfolio/src/assets/resume.pdf" class="entrance-wrapper right" target="_blank">
+      <a @click="openPdf()" class="entrance-wrapper right" target="_blank">
         <div class="entrance-card">
           <div>
             <div class="entrance-card-title">Resume</div>
@@ -51,6 +51,9 @@ export default {
   methods: {
     goToPage(path) {
       this.$router.push({ name: path })
+    },
+    openPdf() {
+      window.open('https://pda.104.com.tw/profile/preview?vno=75s33y27t')
     }
   }
 }

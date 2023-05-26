@@ -25,7 +25,7 @@
               class="nav-link"
               >WORK</RouterLink
             >
-            <a href="/my-portfolio/src/assets/resume.pdf" class="download" target="_blank">RESUME</a>
+            <a href="https://pda.104.com.tw/profile/preview?vno=75s33y27t" class="download" target="_blank">RESUME</a>
           </nav>
         </div>
       </div>
