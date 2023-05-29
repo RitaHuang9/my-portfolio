@@ -57,9 +57,6 @@ export default {
     goToPage(path) {
       this.$router.push({ name: path })
     },
-    openPdf() {
-      window.open('https://pda.104.com.tw/profile/preview?vno=75s33y27t')
-    }
   }
 }
 </script>
