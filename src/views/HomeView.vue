@@ -29,7 +29,7 @@
           </button>
         </div>
       </a>
-      <a @click="openPdf()" class="entrance-wrapper right" target="_blank">
+      <a :href="pdfPath" class="entrance-wrapper right" target="_blank">
         <div class="entrance-card">
           <div>
             <div class="entrance-card-title">Resume</div>
@@ -48,6 +48,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      pdfPath:'/resume.pdf'
+    }
+  },
   methods: {
     goToPage(path) {
       this.$router.push({ name: path })
