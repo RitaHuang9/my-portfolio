@@ -8,7 +8,7 @@
           <div>
             <div class="entrance-card-title">About</div>
             <div class="entrance-card-content">
-              Hi！我是一名想轉職前端的UIUX設計師，想進一步了解我請來這裡～
+              Hi！我是一名UIUX設計師，想進一步了解我請來這裡～
             </div>
           </div>
           <button type="button" class="btn">
